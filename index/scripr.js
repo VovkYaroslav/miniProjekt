@@ -15,7 +15,7 @@ const users = fetch('https://jsonplaceholder.typicode.com/users').then(response 
 
         // 3 Додати кожному блоку кнопку/посилання , при кліку на яку відбувається перехід  на сторінку user-details.html, котра має детальну інфорацію про об'єкт на який клікнули
         const userLink = document.createElement('a')
-        userLink.setAttribute('href',`file:///C:/Users/Admin/IdeaProjects/miniProjekt/index/user-detailes.html${JSON.stringify(item.id)}`)
+        userLink.setAttribute('href',`user-detailes.html${JSON.stringify(item.id)}`)
         userLink.innerText = 'User Detailes'
 
         user.append(userId,userName,userLink)

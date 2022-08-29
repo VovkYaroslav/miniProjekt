@@ -2,7 +2,7 @@ let post_id = window.location.search.split('?').join('')
 const post = JSON.parse(localStorage.getItem('post'));
 console.log(post);
 document.querySelector('.postInfoTitle').innerText ='Post title: ' + post.title
-document.querySelector('.postInfo__userId').innerText ='User ID: '+  post.userId
+document.querySelector('.postInfo__userId').innerText ='User ID: '+  post.userid
 document.querySelector('.postInfo__id').innerText = 'Post ID: ' + post.id
 document.querySelector('.postInfo__text').innerText = 'Post Text: ' + post.body
 

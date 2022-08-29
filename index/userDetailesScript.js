@@ -33,7 +33,7 @@ document.querySelector('.getComments').addEventListener('click', () => {
                     postTitle.innerText = item.title
 
                     const link = document.createElement('a')
-                    link.setAttribute('href', `post-detailes.html?${item.id}`)
+                    link.setAttribute('href', `post-detailes.html${item.id}`)
                     link.innerText = 'go to post details'
                     link.addEventListener("click", ()=>{
                         console.log(item.id)
